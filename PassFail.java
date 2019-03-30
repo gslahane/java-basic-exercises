@@ -1,7 +1,7 @@
 class PassFail {
 	public static void main(String[] args) {
 
-		int marks = 31;
+		int marks = 3;
 
 		String result = checkPassFail(marks);
 
@@ -13,7 +13,10 @@ class PassFail {
 	static String checkPassFail(int marks) {
 		if (marks < 35)
 			return "Fail";
-		else
+		else if (marks > 35)
 			return "Pass";
+		else 
+			return "Done!"
+
 	}
 }
